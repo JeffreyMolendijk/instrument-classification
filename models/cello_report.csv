@@ -1,0 +1,9 @@
+Classification Report for cello:
+              precision    recall  f1-score   support
+
+       False       0.53      0.99      0.69       259
+        True       0.25      0.00      0.01       226
+
+    accuracy                           0.53       485
+   macro avg       0.39      0.50      0.35       485
+weighted avg       0.40      0.53      0.37       485

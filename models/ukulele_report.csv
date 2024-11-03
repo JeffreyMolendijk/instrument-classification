@@ -1,0 +1,9 @@
+Classification Report for ukulele:
+              precision    recall  f1-score   support
+
+       False       0.76      0.77      0.76       408
+        True       0.47      0.46      0.47       182
+
+    accuracy                           0.67       590
+   macro avg       0.62      0.61      0.61       590
+weighted avg       0.67      0.67      0.67       590

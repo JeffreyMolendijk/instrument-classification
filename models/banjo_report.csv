@@ -1,0 +1,9 @@
+Classification Report for banjo:
+              precision    recall  f1-score   support
+
+       False       0.76      0.77      0.76       338
+        True       0.43      0.42      0.42       140
+
+    accuracy                           0.67       478
+   macro avg       0.59      0.59      0.59       478
+weighted avg       0.66      0.67      0.66       478

@@ -16,14 +16,20 @@ Run `setup.sh` to create the required directories and download the OpenMic-2018 
 $ sh setup.sh
 ```
 
-Install ffmpeg and libsndfile.
+Install ffmpeg.
 
-> TODO
+> Please [download and follow the ffmpeg installation instructions](https://www.ffmpeg.org/download.html) relevant to your operating system.
 
-Install the additional requirements
+Install the additional python libraries.
 
 ```bash
 pip install -r requirements.txt
+```
+
+(Optional) Install the requirements to enable tensorflow GPU support on your machine. This could involve installing tensorflow-macos, or tensorflow-metal if using MacOS.
+
+```bash
+pip install tensorflow-metal
 ```
 
 ## Dataset
@@ -41,12 +47,31 @@ Most important here are the pre-defined train-test split as recommended by the a
 
 ## Usage
 
-> TODO
+To generate new models, run the `model-training.ipynb` notebook in the notebooks directory.
 
 ## Metrics
 
-> TODO
+The weighted average precision, recall and f1-scores are retrieved from the reports in the `models` directory.
 
-## Findings
-
-- Number of instruments among dataset is unbalanced.
+|instrument|precision|recall|f1-score|support|
+|--|--|--|--|--|
+|accordion|0.75|0.64|0.67|538
+|banjo|0.66|0.67|0.66| 478
+|bass|0.72|0.73|0.72| 463
+|cello|0.40|0.53|0.37| 485
+|clarinet|0.70|0.78|0.70| 640
+|cymbals|0.90|0.89|0.89| 436
+|drums| 0.89|0.88|0.87| 424
+|flute|0.79|0.69|0.57| 562
+|guitar|0.82|0.78|0.79| 436
+|mallet percussion|0.60|0.60|0.57| 478
+|mandolin|0.70|0.62|0.63| 627
+|organ|0.71|0.74|0.71| 431
+|piano|0.84|0.78|0.79| 415
+|saxophone|0.68|0.59|0.54| 629
+|synthesizer|0.85|0.83|0.83| 380
+|trombone|0.54|0.66|0.56| 720
+|trumpet|0.45|0.59|0.44| 785
+|ukelele|0.67|0.67|0.67| 590
+|violin|0.78|0.78|0.77| 631
+|voice|0.82|0.79|0.77| 374

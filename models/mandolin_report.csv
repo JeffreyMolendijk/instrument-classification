@@ -1,0 +1,9 @@
+Classification Report for mandolin:
+              precision    recall  f1-score   support
+
+       False       0.82      0.57      0.67       434
+        True       0.43      0.71      0.53       193
+
+    accuracy                           0.62       627
+   macro avg       0.62      0.64      0.60       627
+weighted avg       0.70      0.62      0.63       627

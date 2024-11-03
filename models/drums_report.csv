@@ -1,0 +1,9 @@
+Classification Report for drums:
+              precision    recall  f1-score   support
+
+       False       0.96      0.67      0.79       146
+        True       0.85      0.99      0.91       278
+
+    accuracy                           0.88       424
+   macro avg       0.91      0.83      0.85       424
+weighted avg       0.89      0.88      0.87       424

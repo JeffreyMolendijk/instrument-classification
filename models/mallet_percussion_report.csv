@@ -1,0 +1,9 @@
+Classification Report for mallet_percussion:
+              precision    recall  f1-score   support
+
+       False       0.60      0.84      0.70       267
+        True       0.60      0.31      0.41       211
+
+    accuracy                           0.60       478
+   macro avg       0.60      0.57      0.55       478
+weighted avg       0.60      0.60      0.57       478

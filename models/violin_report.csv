@@ -1,0 +1,9 @@
+Classification Report for violin:
+              precision    recall  f1-score   support
+
+       False       0.76      0.61      0.68       237
+        True       0.79      0.88      0.83       394
+
+    accuracy                           0.78       631
+   macro avg       0.77      0.75      0.75       631
+weighted avg       0.78      0.78      0.77       631

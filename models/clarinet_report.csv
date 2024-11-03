@@ -1,0 +1,9 @@
+Classification Report for clarinet:
+              precision    recall  f1-score   support
+
+       False       0.79      0.99      0.88       503
+        True       0.40      0.01      0.03       137
+
+    accuracy                           0.78       640
+   macro avg       0.59      0.50      0.45       640
+weighted avg       0.70      0.78      0.70       640

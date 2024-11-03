@@ -1,0 +1,9 @@
+Classification Report for accordion:
+              precision    recall  f1-score   support
+
+       False       0.87      0.64      0.74       423
+        True       0.33      0.64      0.43       115
+
+    accuracy                           0.64       538
+   macro avg       0.60      0.64      0.58       538
+weighted avg       0.75      0.64      0.67       538

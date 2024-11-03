@@ -1,0 +1,9 @@
+Classification Report for piano:
+              precision    recall  f1-score   support
+
+       False       0.60      0.91      0.72       130
+        True       0.94      0.72      0.82       285
+
+    accuracy                           0.78       415
+   macro avg       0.77      0.82      0.77       415
+weighted avg       0.84      0.78      0.79       415

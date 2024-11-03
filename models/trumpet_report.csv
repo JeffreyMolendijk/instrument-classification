@@ -1,0 +1,9 @@
+Classification Report for trumpet:
+              precision    recall  f1-score   support
+
+       False       0.59      0.99      0.74       467
+        True       0.25      0.00      0.01       318
+
+    accuracy                           0.59       785
+   macro avg       0.42      0.50      0.37       785
+weighted avg       0.45      0.59      0.44       785

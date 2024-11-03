@@ -1,0 +1,9 @@
+Classification Report for saxophone:
+              precision    recall  f1-score   support
+
+       False       0.82      0.26      0.39       324
+        True       0.54      0.94      0.69       305
+
+    accuracy                           0.59       629
+   macro avg       0.68      0.60      0.54       629
+weighted avg       0.68      0.59      0.54       629

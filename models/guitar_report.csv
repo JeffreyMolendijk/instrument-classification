@@ -1,0 +1,9 @@
+Classification Report for guitar:
+              precision    recall  f1-score   support
+
+       False       0.63      0.88      0.74       150
+        True       0.92      0.73      0.81       286
+
+    accuracy                           0.78       436
+   macro avg       0.78      0.81      0.78       436
+weighted avg       0.82      0.78      0.79       436

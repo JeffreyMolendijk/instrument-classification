@@ -1,0 +1,9 @@
+Classification Report for synthesizer:
+              precision    recall  f1-score   support
+
+       False       0.66      0.83      0.74       112
+        True       0.92      0.82      0.87       268
+
+    accuracy                           0.83       380
+   macro avg       0.79      0.83      0.80       380
+weighted avg       0.85      0.83      0.83       380
