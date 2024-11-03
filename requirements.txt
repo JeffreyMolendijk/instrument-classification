@@ -1,0 +1,5 @@
+soundfile
+kapre
+librosa
+tqdm
+tensorflow
