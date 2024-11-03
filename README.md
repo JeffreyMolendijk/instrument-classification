@@ -1,6 +1,6 @@
 # instrument-classification
 
-A deep learning model that for instrument classification, trained using [OpenMic-2018](https://zenodo.org/records/1432913).
+Creates a deep learning model for instrument classification, trained using [OpenMic-2018](https://zenodo.org/records/1432913).
 
 ## Getting started
 
@@ -10,7 +10,7 @@ requirements:
 
 ## Installation
 
-Run `setup.sh` to create the required directories and download the OpenMic-2018 dataset.
+Run `setup.sh` to create the required directories and download the OpenMic-2018 dataset, used to train the model.
 
 ```bash
 $ sh setup.sh
@@ -28,45 +28,25 @@ pip install -r requirements.txt
 
 ## Dataset
 
-[add dataset information]
+The [openmic-2018 Github repository](https://github.com/cosmir/openmic-2018) is a great resource to get started with this dataset, and includes an [example notebook](https://github.com/cosmir/openmic-2018/blob/master/examples/modeling-baseline.ipynb) to create and evaluate a random forest classifier for 20 different instruments.
+Most important here are the pre-defined train-test split as recommended by the authors to ensure a balanced dataset. The OpenMic dataset contains both the original audio files (in .ogg) format, and pre-processed VGGish features.
 
-(Optional) Download the training dataset to retrain the model locally. Please skip this step if you're only interested in making predictions with the model. Please download the [OpenMIC-2018 dataset .tar.gz file](https://zenodo.org/records/1432913) and place it in the `data/external/` directory. Extract the contents into the `data/raw/` directory using the following command.
+## Training considerations
 
-```bash
-$ tar xvzf openmic-2018-v1.0.0.tgz -C some/dir
-```
+- Using either the original .ogg files as a starting point, or the pre-processed audio features.
+- If using the original audio files, we could convert them into MFCCs, or other types of model inputs.
+- Creating one model per instrument, or a single multi-label classification model.
+- Instead of pre-processing the audio, we could use (Kapre)[https://github.com/keunwoochoi/kapre] to allow the model to do these conversions.
+- Could use (existing publications)[https://www.researchgate.net/publication/360046712_Musical_Instrument_Identification_Using_Deep_Learning_Approach] as a starting point to design our model architecture.
 
 ## Usage
 
-[training new model]
-
-> python train.py
-
-[making predictions]
-
-> python predict.py
-
-[running tests]
-
-> pytest tests
+> TODO
 
 ## Metrics
 
-[Add report here]
+> TODO
 
-### Notes
+## Findings
 
-- Training dataset is multi-instrument audio. https://brianmcfee.net/papers/ismir2018_openmic.pdf
-- AudioSet object type used.
-- There are x instruments in the dataset. For each audiotrack, we need to return a score or whether that instrument is present or absent. The results should be shown per instrument.
-- https://github.com/cosmir/openmic-2018
-- One vs many models?
-- Good Kapre tutorial --> https://github.com/keunwoochoi/kapre/blob/master/examples/how-to-use-Kapre.ipynb
-- AutoKeras. Can we combine this with Kapre?
-- https://www.researchgate.net/publication/360046712_Musical_Instrument_Identification_Using_Deep_Learning_Approach
-- VGGish vs extraction from audio
-
-### Findings
-
-Dataset unbalanced. Some need for balancing.
-Start with 64 layer, then use 128. CNN benefit from pyramid shape.
+- Number of instruments among dataset is unbalanced.
