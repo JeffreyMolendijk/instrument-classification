@@ -20,7 +20,7 @@ def preprocess_audio(
     :param n_fft: Number of samples in each FFT.
     :param hop_length: Number of samples between successive frames.
     :param n_mfcc: Number of MFCC features to extract.
-    :return: A 2D NumPy array representing the MFCC of the input audio.
+    :return: The MFCC of the input audio.
     """
     # Load audio file as waveform
     audio, sr = librosa.load(file_path, sr=sr, mono=True)
