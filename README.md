@@ -1,6 +1,6 @@
 # instrument-classification
 
-Creates a deep learning model for instrument classification, trained using [OpenMic-2018](https://zenodo.org/records/1432913).
+Creates deep learning models for the classification of 20 instruments, trained using [OpenMic-2018](https://zenodo.org/records/1432913).
 
 ## Getting started
 
